@@ -1,0 +1,378 @@
+@font-face{
+    src: url(Lobster_Two/LobsterTwo-Bold.ttf);
+    font-family: Lobster;
+}
+@font-face{
+    src:url(Qwitcher_Grypen/QwitcherGrypen-Regular.ttf);
+    font-family: Grypen;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family:Lobster;
+    font-size: 19px;
+    background-image: url(images/zachariah-hagy-MCKrW7fB7Pw-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    background-color: white;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+nav ul li{
+    padding: 20px 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+.logo{
+    font-size: 35px;
+    margin-right: auto;
+    font-family: Grypen;
+}
+.logo a{
+    color: orange;
+}
+.logo a:hover{
+    color: orange;
+}
+nav ul li a{
+    text-decoration: none;
+    color: orange;
+}
+nav ul li a:hover{
+    color: white;
+}
+.menu{
+    padding: 14px 20px;
+    display: none;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 5px;
+    width: 300px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.253);
+}
+#sidebar li{
+    width: 100%;
+    border-bottom: 1px solid orange;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.712);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-image: url(images/rohan-g--mwNJswDlXE-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container h2{
+    color: orange;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#featured-dishes{
+    width: 100%;
+    height: 2500px;
+    background-color: rgb(243, 240, 240);
+    margin-bottom: 10px;
+}
+#featured-dishes h2{
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+    padding: 50px;
+}
+#featured-dishes p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 17px;
+}
+.dish{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 130px;
+}
+.dish1, .dish2, .dish3{
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.dish1 img,.dish2 img,.dish3 img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    background-color: rgba(165, 42, 42, 0.562);
+    background-blend-mode: multiply;
+    border-top-right-radius: 10px;
+    z-index: 1;
+}
+.dish1 h4, .dish2 h4, .dish3 h4{
+    font-size: 20px;
+    font-family: Lobster;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dish1 p, .dish2 p, .dish3 p{
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+ .dish2 .ordernow, .dish3 .ordernow{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 60px;
+    float: right;
+    margin-right: 5px;
+}
+.dish1 .ordernow a, .dish2 .ordernow a, .dish3 .ordernow a{
+    color: black;
+    text-decoration: none;
+}
+.rating{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.dish1 .ordernow{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 5px;
+    float: right;
+}
+.dishes{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    margin-top: 150px;
+}
+.dish4, .dish5, .dish6{
+    width: 25%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.dish4 img,.dish5 img,.dish6 img{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dish4 h4, .dish5 h4, .dish6 h4{
+    font-size: 20px;
+    font-family: Lobster;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.dish4 p, .dish5 p, .dish6 p{
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+ .dish5 .ordernow, .dish6 .ordernow{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 60px;
+    float: right;
+    margin-right: 5px;
+}
+.dish4 .ordernow a, .dish5 .ordernow a, .dish6 .ordernow a{
+    color: black;
+    text-decoration: none;
+}
+.rating{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.dish4 .ordernow{
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 60px;
+    margin-right: 5px;
+    float: right;
+}
+@media only screen and (max-width: 600px){
+    .hideonscreen{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .ourmenu{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #featured-dishes p{
+        text-align: center;
+        margin-bottom: 5px;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 15px;
+    }
+    #featured-dishes{
+        width: 100%;
+        height: 3350px;
+}
+.dish{
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+.dishes{
+    display: flex;
+    height: 1500px;
+    flex-direction: column;
+    margin-top: 0;
+    
+}
+.dish1,.dish3{
+    width: 75%;
+    height: 445px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+.dish2{
+    width: 75%;
+    height: 445px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+.dish5{
+    width: 75%;
+    height: 445px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+.dish4, .dish6{
+    width: 75%;
+    height: 430px;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.dish1 .ordernow, .dish2 .ordernow, .dish3 .ordernow, .dish4 .ordernow, .dish5 .ordernow, .dish6 .ordernow{
+    margin-top: 45px;
+}
+}
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    #featured-dishes{
+        width: 100%;
+        height: 1600px;
+    }
+    .dish{
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .dishes{
+        display: flex;
+        height: 600px;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .dish1{
+        width: 26%;
+        height: 460px;
+    }
+    .dish3{
+        width: 26%;
+        height: 460px;
+    }
+    .dish4{
+        width: 26%;
+        height: 460px;
+    }
+    .dish2{
+        width: 26%;
+        height: 460px;
+    }
+    .dish5{
+        width: 26%;
+        height: 460px;
+    }
+    .dish6{
+        width: 26%;
+        height: 460px;
+    }
+   .dish1 .ordernow{
+    margin-top: 60px;
+}
+.dish4 .ordernow{
+    margin-top: 60px;
+}
+}
