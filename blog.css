@@ -1,0 +1,155 @@
+@font-face{
+    src: url(Lobster_Two/LobsterTwo-Bold.ttf);
+    font-family: Lobster;
+}
+@font-face{
+    src:url(Qwitcher_Grypen/QwitcherGrypen-Regular.ttf);
+    font-family: Grypen;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    font-family:Lobster;
+    font-size: 19px;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    position: sticky;
+    background-color: white;
+    color: white;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+nav ul li{
+    padding: 20px 10px;
+    font-family: 'Franklin Gothic Medium';
+}
+.logo{
+    font-size: 35px;
+    margin-right: auto;
+    font-family: Grypen;
+}
+.logo a{
+    color: orange;
+}
+.logo a:hover{
+    color: orange;
+}
+nav ul li a{
+    text-decoration: none;
+    color: orange;
+}
+nav ul li a:hover{
+    color: black;
+}
+.menu{
+    padding: 14px 20px;
+    display: none;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    border-radius: 5px;
+    width: 300px;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.253);
+}
+#sidebar li{
+    width: 100%;
+    border-bottom: 1px solid orange;
+}
+.container{
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.712);
+    background-size: cover;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-image: url(images/rohan-g--mwNJswDlXE-unsplash.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container h2{
+    color: orange;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+    .hideonscreen{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .ourmenu{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+}

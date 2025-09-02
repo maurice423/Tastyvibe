@@ -76,17 +76,19 @@ nav ul li a:hover{
     display: none;
     flex-direction: column;
     z-index: 999;
-    border-radius: 10px;
-    width: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 350px;
     height: 100%;
     justify-content: flex-start;
     align-items: flex-start;
     backdrop-filter: blur(10px);
     background-color: black;
+    transition-behavior: smooth;
+    transition: all .6s ease-in-out;
 }
 #sidebar li{
     width: 100%;
-    border-bottom: 1px solid orange;
 }
 .hero{
     width: 80%;
@@ -94,6 +96,8 @@ nav ul li a:hover{
     text-align: center;
     margin: 110px auto 0px auto;
     color: white;
+    transition-behavior: smooth;
+    transition: all .6s ease-in-out;
 }
 .hero h2{
     font-size: 80px;
@@ -114,6 +118,8 @@ nav ul li a:hover{
     color: black;
     font-size: 14px;
     cursor: pointer;
+    transition: all 0.6s ease-in-out;
+    transition-behavior: smooth;
 }
 .hero .ourmenu a{
     color: black;
@@ -122,15 +128,26 @@ nav ul li a:hover{
 .hero .ourmenu:hover{
     background-color: transparent;
     border:1px solid white;
-    color: orange;
+    color: rgb(199, 182, 150);
+    transform: translateY(-10px);
+}
+.hero .ourmenu:hover a{
+    color: whitesmoke;
 }
 .hero .makereservation{
     padding: 10px 20px;
     border: 1px solid white;
     border-radius: 20px;
     background-color: transparent;
-    color: white;
-    
+    color: white;  
+    transition: all .6s ease-in-out;
+    transition-behavior: smooth;
+}
+.hero .makereservation:hover{
+    transform: translateY(-10px);
+    background-color: orange;
+    border-color: transparent;
+    color: black;
 }
 .hero .makereservation a{
     color: white;
@@ -141,11 +158,14 @@ nav ul li a:hover{
     display: flex;
     background-color: white;
     height: 400px;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     column-gap: 50px;
     padding-bottom: 10px;
+    transition-behavior: smooth;
+    transition: all 1s ease-in-out;
 }   
 .quality .Fresh-Ingredients{
     text-align: center;
@@ -223,6 +243,12 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.7s ease-in-out;
+    transition-behavior: smooth;
+}
+.dish1:hover, .dish2:hover, .dish3:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 .dish1 img,.dish2 img,.dish3 img{
     width: 100%;
@@ -254,10 +280,19 @@ nav ul li a:hover{
     margin-top: 60px;
     float: right;
     margin-right: 5px;
+    transition: all .9s ease-in-out;
+}
+.dish2 .ordernow:hover, .dish3 .ordernow:hover{
+    background-color: black;
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 .dish1 .ordernow a, .dish2 .ordernow a, .dish3 .ordernow a{
     color: black;
     text-decoration: none;
+}
+.dish1 .ordernow a:hover, .dish2 .ordernow a:hover, .dish3 .ordernow a:hover{
+    color: white;
 }
 .rating{
     width: 100%;
@@ -292,6 +327,12 @@ nav ul li a:hover{
     background-color: white;
     border-radius: 10px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.6s ease-in-out;
+    transition-behavior: smooth;
+}
+.dish4:hover, .dish5:hover, .dish6:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
 }
 .dish4 img,.dish5 img,.dish6 img{
     width: 100%;
@@ -340,7 +381,7 @@ nav ul li a:hover{
     background-color: orange;
     font-size: 14px;
     cursor: pointer;
-    margin-top: 60px;
+    margin-top: 70px;
     margin-right: 5px;
     float: right;
 }
@@ -364,6 +405,41 @@ nav ul li a:hover{
     color: white;
     text-decoration: none;
 }
+.ourculinarystory{
+    width: 100%;
+    height: 1000px;
+    display: flex;  
+    flex-direction: row;
+    background-color: white;
+    margin-bottom: 100px;
+}
+.culinarytext{
+    width: 50%;
+    background-color: blue;
+    margin: 30px;
+}
+.culinarytext h2{
+    text-align: left;
+    font-weight: bolder;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium';
+}
+.culinarytext p{
+    text-align: left;
+    font-size: 17px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+.culinary-image{
+    width: 50%;
+    background-color: teal;
+    margin: 30px;
+}
+
+
+
+
+
     @media only screen and (max-width: 900px){
         .hideonscreen{
             display: none;
@@ -451,7 +527,22 @@ nav ul li a:hover{
         }
         .dish1 .ordernow, .dish2 .ordernow, .dish3 .ordernow, .dish4 .ordernow, .dish5 .ordernow, .dish6 .ordernow{
             margin-top: 45px;
+
     }
+    .ourculinarystory{
+        display: block;
+        height: 1500px;
+        margin-bottom: 100px;
+    }
+    .culinarytext{  
+        width: 50%;
+    }
+    .culinary-image{
+        width: 50%;
+    }
+    }
+
+    
 
     }
     @media only screen and (min-width: 1024px) and (max-width: 1400px) {
